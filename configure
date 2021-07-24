@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+
+set CUR_DIR (realpath (dirname (status --current-filename)))
+ln -s $CUR_DIR/.vifm ~/.vifm

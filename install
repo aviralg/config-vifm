@@ -1,0 +1,8 @@
+#!/usr/bin/env fish
+
+switch (uname)
+    case Linux
+        sudo apt-get install vifm
+    case Darwin
+        brew install vifm
+end
