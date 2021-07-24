@@ -65,8 +65,7 @@ colorscheme papercolor-dark
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
 " See man date or man strftime for details.
 
-set timefmt=%m/%d\ %H:%M
-
+set timefmt=%G\ %b\ %d\ %H:%M
 " Show list of matches on tab completion in command-line mode
 
 set wildmenu
@@ -393,8 +392,9 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Customize view columns a bit (enable ellipsis for truncated file names)
 "
-" set viewcolumns=-{name}..,6{}.
+set viewcolumns=-{perms},-{uname}..,-{gname}..,-{mtime},-{name}..,{size}
 
+"
 " Filter-out build and temporary files
 "
 " filter! {*.lo,*.o,*.d,*.class,*.pyc,*.pyo,.*~}
